@@ -53,7 +53,7 @@ Partially taken from Steps stolen directly from [Modifying CoreOS](https://coreo
 
 1. donwload and enter the SDK
 
-		./chromite/bin/cros_sdk
+		./chromite/bin/cros_sdk --enter
 		./set_shared_user_password.sh
 
 2. fetch the linux kernel. TODO: Do we actually need this?
