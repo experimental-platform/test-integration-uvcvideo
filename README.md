@@ -58,7 +58,7 @@ Partially taken from Steps stolen directly from [Modifying CoreOS](https://coreo
 
 2. setup a board root fs and build the image:
 
-		./setup_board --default --board=amd64-usr --force && ./build_packages && ./build_image dev
+		./setup_board --default --board=amd64-usr --force && ./build_packages && ./build_image prod
 
 ## Bare Metal Installation
 
