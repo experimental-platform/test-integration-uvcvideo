@@ -63,7 +63,7 @@ Partially taken from Steps stolen directly from [Modifying CoreOS](https://coreo
 ## Generate update payload
 
 ```
-../platform/dev/cros_generate_update_payload --image ../build/images/amd64-usr/developer-766.5.0+2015-11-30-1408-a1/coreos_production_image.bin --output ../../coreos-766.5.0+2015-11-30-1408.gz --private_key ../../protonet.key ../../protonet.pub
+../platform/dev/cros_generate_update_payload --image ../build/images/amd64-usr/developer-766.5.0+2015-11-30-1408-a1/coreos_production_image.bin --output ../../coreos-766.5.0+2015-11-30-1408.gz --private_key ../../protonet.key --public_key ../../protonet.pub
 ```
 
 ## Bare Metal Installation
