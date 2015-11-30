@@ -60,6 +60,12 @@ Partially taken from Steps stolen directly from [Modifying CoreOS](https://coreo
 
 		./setup_board --default --board=amd64-usr --force && ./build_packages && ./build_image prod
 
+## Generate update payload
+
+```
+../platform/dev/cros_generate_update_payload --image ../build/images/amd64-usr/developer-766.5.0+2015-11-30-1408-a1/coreos_production_image.bin --output ../../coreos-766.5.0+2015-11-30-1408.gz --private_key ../../protonet.key ../../protonet.pub
+```
+
 ## Bare Metal Installation
 
 1. locate, bzip2 and copy the file `coreos_developer_image.bin` to a machine with access to the target drive.
