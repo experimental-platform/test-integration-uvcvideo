@@ -56,14 +56,7 @@ Partially taken from Steps stolen directly from [Modifying CoreOS](https://coreo
 		./chromite/bin/cros_sdk --enter
 		./set_shared_user_password.sh
 
-2. fetch the linux kernel. TODO: Do we actually need this?
-
-		sudo mkdir -p /usr/src/linux; cd /usr/src; sudo chown -R <user>.<group> linux
-		git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux
-		cd linux; git checkout checkout linux-4.1.y; cd ~/coreos
-		export KERNEL_DIR=/usr/src/linux/
-
-3. setup a board root fs and build the image:
+2. setup a board root fs and build the image:
 
 		./setup_board --default --board=amd64-usr --force && ./build_packages && ./build_image dev
 
